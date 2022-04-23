@@ -55,6 +55,7 @@ export const rectanguloDorado = (lista) => {
     var canvas = document.querySelector("canvas");
     var pincel = canvas.getContext("2d");
     var rectangulo = crearArregloRectangulo(lista);
+    const arregloTexto = crearArregloTexto(lista);
 
     pincel.beginPath(),
     pincel.strokeStyle = "lightcoral",
@@ -65,7 +66,10 @@ export const rectanguloDorado = (lista) => {
     pincel.lineTo(lista.x, rectangulo[1]);          // 3ra esquina
     pincel.lineTo(lista.x, lista.y);                // cierro
 
+    pincel.fillText(lista.radio/10, arregloTexto[0], arregloTexto[1], lista.radio/5);
+
     pincel.stroke();
+
 }
 
 const crearArregloRectangulo = (lista) => {
@@ -80,5 +84,20 @@ const crearArregloRectangulo = (lista) => {
         case 3: arregloResultante = [x - radio, y + radio]; break;   // ← ↑ → ↓
         case 4: arregloResultante = [x + radio, y + radio]; break;   // → ↑ ← ↓ 
     }                                                                // Fatality
+    return arregloResultante;
+}
+
+const crearArregloTexto = (lista) => {
+    var arregloResultante = [];
+    const x = lista.x;
+    const y = lista.y;
+    const radio = lista.radio/2;
+
+    switch(lista.cuadrante){    // Depende el cuadrante es la direccion a donde se movera el pincel
+        case 1: arregloResultante = [x + radio, y - radio]; break;
+        case 2: arregloResultante = [x - radio, y - radio]; break;
+        case 3: arregloResultante = [x - radio, y + radio]; break;
+        case 4: arregloResultante = [x + radio, y + radio]; break; 
+    }                                                             
     return arregloResultante;
 }
