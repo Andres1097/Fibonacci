@@ -83,5 +83,8 @@ a{
     position: absolute;
     transition: 15s;
     width: 50vw;
-    height: 90vh;
+}
+
+@media screen and (min-width: 1080px){
+    .canvas{ height: 80vh;}
 }
