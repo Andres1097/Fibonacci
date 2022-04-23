@@ -1,3 +1,10 @@
+:root{
+    --letraTitulos: rgb(17, 196, 106);
+    --fondo: rgb(52, 73, 119);
+    --bordes: aqua;
+    --display: darkcyan;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +12,64 @@
 }
 
 body{
-    background-color: darkslategray;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--letraTitulos);
+}
+
+a{ 
+    text-decoration: none;
+    color:var(--letraTitulos);
+}
+
+.header--titulo{
+    font-size: 2.5rem;
+}
+
+.header--titulo:hover{ text-decoration: underline;}
+
+.header--subtitulo{
+    margin-bottom: 5rem;
+    font-style: italic;
+}
+
+.header--display{
+    background-color: var(--display);
+    border: 10px solid var(--bordes);
+    width: 20rem;
+    height: 25rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(29, 25, 25);
+    transition: 3s;
+}
+
+.header--display:hover{
+    height: 42rem;
+}
+
+.main{
+    width: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inicio{
+.main--inicio{
     padding: 0.75rem;
     border-radius: 0.5rem;
     background-color: transparent;
@@ -21,45 +79,9 @@ body{
 }
 
 .canvas{
-    border: 5px solid aqua;
+    border: 5px solid var(--bordes);
     position: absolute;
     transition: 15s;
     width: 50vw;
-    height: 100vh;
+    height: 90vh;
 }
-
-.active{
-    width: 50%;
-}
-
-.display{
-    background-color: darkcyan;
-    position: absolute;
-    right: 80vw;
-    border: 10px solid aqua;
-    width: 15rem;
-    height: 25rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: rgb(19, 18, 18);
-    transition: 3s;
-}
-
-.display:hover{
-    height: 42rem;
-}
-
-.titulo{
-    position: absolute;
-    right: 78vw;
-    bottom: 90vh;
-    font-size: 2.5rem;
-}
-
-.subtitulo{
-    position: absolute;
-    right: 80vw;
-    bottom: 88vh;
-    font-style: italic;
-}
-

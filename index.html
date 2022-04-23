@@ -6,11 +6,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 class="titulo">Secuencia de Fibonacci</h1>
-        <h2 class="subtitulo">Espiral Dorado / Aurea</h3>
-        <textarea class="display" disabled>Secuencia:</textarea>
-        <button class="inicio">Iniciar</button>
-        <canvas class="canvas" width="500px" height="500px"></canvas>
+        <div class="header">
+            <a href="https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci" target="_blank"><h1 class="header--titulo">Sucesión de Fibonacci</h1></a>
+            <h2 class="header--subtitulo">Espiral Dorado / Aurea</h2>
+            <textarea class="header--display" disabled>Secuencia (15):</textarea>
+        </div>
+
+        <div class="main">
+            <button class="main--inicio">Iniciar</button>
+            <canvas class="canvas" width="500px" height="500px"></canvas>
+        </div>
         <script type="module" src="script.js"></script>
     </body>
 </html>
