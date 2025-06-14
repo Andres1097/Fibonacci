@@ -6,7 +6,7 @@ Proyecto: Gestión de Turnos Médicos.
 - Maven 4 o superior.
 - Lombok instalado en el IDE.s
 - MySQL como Base de Datos.
-- Crear la base de datos en MySQL manualmente: CREATE DATABASE turnos_medicos;
+- Crear la base de datos en MySQL manualmente: CREATE DATABASE `turnos_medicos`;
 - Abrir el proyecto y revisar que estén las dependencias descargadas, sino abrir una terminal en la raíz del proyecto y ejecutar esta instrucción: mvn clean install
 - Configurar las variables de entorno para que el archivo application.yml las reconozca antes de iniciar la aplicación, haciendo clic derecho en el proyecto -> Run as  -> Run Configurations -> Environment:
 	+ DB_URL -> colocar la url de la base de datos.
@@ -23,6 +23,6 @@ Proyecto: Gestión de Turnos Médicos.
 - Ejecutar el proyecto.
 - Si todo esta correcto aparece que la aplicación inicio en el puerto correspondiente, en nuestro caso 8080.
 - Abrir el navegador e ir a la siguiente url: localhost:8080 (Sera redireccionado a /login)
-- Para una demo con admin:
++ Para una demo con admin:
     - Usuario: admin@vidanova.com
     - Contraseña: admin123
