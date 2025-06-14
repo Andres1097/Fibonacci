@@ -9,9 +9,9 @@ Proyecto: Gestión de Turnos Médicos.
 - Crear la base de datos en MySQL manualmente: CREATE DATABASE `turnos_medicos`;
 - Abrir el proyecto y revisar que estén las dependencias descargadas, sino abrir una terminal en la raíz del proyecto y ejecutar esta instrucción: mvn clean install
 - Configurar las variables de entorno para que el archivo application.yml las reconozca antes de iniciar la aplicación, haciendo clic derecho en el proyecto -> Run as  -> Run Configurations -> Environment:
-	+ DB_URL -> colocar la url de la base de datos.
-	+ DB_USERNAME -> colocar su usuario de la base de datos.
-	+ DB_PASSWORD -> colocar tu contraseña de la base de datos.
+  + DB_URL -> colocar la url de la base de datos.
+  + DB_USERNAME -> colocar su usuario de la base de datos.
+  + DB_PASSWORD -> colocar tu contraseña de la base de datos.
   + EMAIL_USERNAME -> colocar mail habilitado para envio
   + EMAIL_PASSWORD -> colocar contraseña de aplicacion del mail
 - Inicializar tablas y datos
