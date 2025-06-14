@@ -15,14 +15,14 @@ Proyecto: Gestión de Turnos Médicos.
   + EMAIL_USERNAME -> colocar mail habilitado para envio
   + EMAIL_PASSWORD -> colocar contraseña de aplicacion del mail
 - Inicializar tablas y datos
-	(1) Ejecutar la aplicación (Run/Spring) para que JPA genere las tablas.
-	(2) Detener la aplicación.
-	(3) En src/main/resources/data.sql, descomentar las sentencias INSERT.
-	(4) Reiniciar la aplicación para cargar roles, estados de turno y usuario admin.
-	(5) Comentar nuevamente data.sql para evitar duplicados en futuros arranques.
+  + (1) Ejecutar la aplicación (Run/Spring) para que JPA genere las tablas.
+  + (2) Detener la aplicación.
+  + (3) En src/main/resources/data.sql, descomentar las sentencias INSERT.
+  + (4) Reiniciar la aplicación para cargar roles, estados de turno y usuario admin.
+  + (5) Comentar nuevamente data.sql para evitar duplicados en futuros arranques.
 - Ejecutar el proyecto.
-- Si todo esta correcto aparece que la aplicación inicio en el puerto correspondiente, en nuestro caso 8080.
-- Abrir el navegador e ir a la siguiente url: localhost:8080 (Sera redireccionado a /login)
-+ Para una demo con admin:
+- Si todo esta correcto aparece que la aplicación inicio en el puerto correspondiente (:8080).
+- Abrir el navegador e ir a la siguiente url: localhost:8080
+- Para una demo con admin:
     - Usuario: admin@vidanova.com
     - Contraseña: admin123
