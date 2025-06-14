@@ -23,6 +23,7 @@ Proyecto: Gestión de Turnos Médicos.
 - Ejecutar el proyecto.
 - Si todo esta correcto aparece que la aplicación inicio en el puerto correspondiente (:8080).
 - Abrir el navegador e ir a la siguiente url: localhost:8080
-- Para una demo con admin:
+- Para una demo con Admin:
     - Usuario: admin@vidanova.com
     - Contraseña: admin123
+- Para una demo con Paciente es necesario registrarse en el sistema.
